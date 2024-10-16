@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>It's Christmas!</title>
+<meta charset="utf-8">
+<style>
+    header{background-image:url(christmas.jpg); 
+           font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           opacity: 0.85;
+           width: 1520px;
+           height: 100px;
+           font-size: 4em;}
+
+    nav{line-height: 30px;
+        position: sticky;
+        text-align:center;
+        background-color:rgba(142, 116, 116, 0.2);
+        height: 608px;
+        width: 150px;
+        float:left;
+        font-size:2em;
+        padding: 10px;
+        padding-top: 1em;}
+
+    a{text-decoration: none;
+        color:rgba(51, 36, 36, 0.588);
+        line-height: 1.2;
+        display: block;}
+    
+    a:hover{color:brown;}
+
+    section{text-align:center;
+        width:1520px;
+        height:650px;
+        float:left;
+        padding:0px;
+        background-color:rgba(250, 205, 212, 0.656)} 
+
+    footer{background-color:rgb(212, 84, 84);
+           color:white;
+           position:relative;
+           bottom:0;
+           text-align: center;
+           width: 1520px;
+           display: flex;
+           font-size:1em;}
+
+    .card-flipping {width: 550px; 
+                    height: 500px;
+                    margin-top: 75px;
+                    margin-left: 240px;
+                    margin-bottom: 0;
+                    position:sticky;} 
+
+    .second-card-flipping {width: 550px; 
+                           height: 500px;
+                           float: right;
+                           margin:0;
+                           margin-top:-500px;
+                           margin-right: 70px;
+                           position:sticky;}
+
+    .inner-card-flipping {position:center; 
+                          text-align:start; 
+                          transition: transform 0.5s; 
+                          transform-style:preserve-3d;}
+
+    .second-inner-card-flipping {position:center; 
+                                 text-align:start;
+                                 transition: transform 0.5s; 
+                                 transform-style:preserve-3d;} 
+
+    .card-flipping:hover .inner-card-flipping {transform:rotateY(180deg);} 
+
+    .second-card-flipping:hover .second-inner-card-flipping {transform:rotateY(-180deg);} 
+
+    .front-card-flipping, .back-card-flipping {position:absolute; 
+                                               width: 550px; 
+                                               height: 500px; 
+                                               backface-visibility:hidden;} 
+
+    .second-front-card-flipping, .second-back-card-flipping {position:absolute; 
+                                                             width: 550px; 
+                                                             height: 500px;
+                                                             backface-visibility:hidden;} 
+ 
+    .back-card-flipping {background-color:rgba(255, 176, 190, 0.559); 
+                         font-size: 22px;
+                         text-align: center;
+                         line-height: 1.5;
+                         color:black; 
+                         transform:rotateY(180deg);} 
+
+    .second-back-card-flipping {background-color:rgba(129, 37, 53, 0.689); 
+                                font-size: 22px;
+                                text-align: center;
+                                line-height: 1.5;
+                                color:rgb(246, 238, 223); 
+                                transform:rotateY(-180deg);}
+
+    body, footer{margin:0}
+
+</style>
+</head>
+
+<body> 
+    <header>
+    </header>
+
+    <section>
+        <nav>
+            <br><a href="home.html">Home</a></br> 
+            <blockquote></blockquote>
+            <br><a href="aboutchristmas.html">About Christmas</a></br>
+            <blockquote></blockquote>
+            <br><a href="greeting.html">Greetings</a></br>    
+        </nav>
+
+    <div class="card-flipping">
+        <div class="inner-card-flipping">
+            <div class="front-card-flipping">
+            <img src="card1.gif" alt="Christmas" style="width:550px; height:500px;">
+            </div>        
+    
+    <div class="back-card-flipping">
+        <h1>Merry Christmas!</h1>
+        <p><h3>Christmas is about spending time with family and friends. It's about creating happy memories that will last a lifetime. 
+        Wish you all a Merry Christmas. May the joys of the season fill your heart with Goodwill and cheer. May the Chimes of Christmas 
+        Glory add up more shine and spread smiles across the miles, today and in the New Year.</p>
+        <p><h3>By JingYing</p></h3>
+    </div>
+        </div>
+    </div>
+
+    <div class="second-card-flipping">
+        <div class="second-inner-card-flipping">
+            <div class="second-front-card-flipping">
+            <img src="card2.gif" alt="Christmas" style="width:550px; height:500px;">
+            </div>
+             
+    <div class="second-back-card-flipping">
+        <h1>Happy Xmas!</h1>
+        <p><h3>It is a time for celebrations and gatherings. I wish all of you - my family, my relatives, my friends become closer to 
+            all those that you treasure in your heart this Christmas season. Christmas is surrounded by love, joy and hope. Pass along 
+            this message to everyone to spread the light of this wonderful holiday! Cheers to a lovely and restful Christmas with your 
+            precious ones! </p>
+        <p><h3>By Tzeyea</p></h3>
+    </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <i>Copyright &copy; 2022 Sunway University Students: 22022123&21088661</i>
+</footer>
+
+</body>
+</html>
